@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/adaptive-menu.css">
+	<link rel="stylesheet" href="css/preloader.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<content>
+  	<input id="hamburger" class="hamburger" type="checkbox"/>
+  	<label class="hamburger" for="hamburger">
+    	<i></i>
+   		<text>
+	      	<open>Меню</open>
+    	</text>
+  	</label>
+  	<section class="drawer-list">
+       	<ul>
+         	<li><a href="#header">New order</a></li>
+         	<li><a href="#tarif">Services</a></li>
+          	<li><a href="#services">Orders</a></li>
+         	<li><a href="#poisk">Add funds</a></li>
+         	<li><a href="#reviews">API</a></li>
+         	<li><a href="#reviews"><img src="img/russia.svg" alt=""></a></li>
+         	<li><a href="#reviews" class="green">$0.00</a></li>
+         	<li><a href="#reviews" class="green">Account</a></li>
+         	<li><a href="#reviews" class="green">Logout</a></li>
+      	</ul>
+    </section>
+</content>
+<body>
+	<header class="header">
+	<div class="preloader" id="preloader">
+	<p>Пожалуйста, подождите</p>
+	<div class="loader">
+		<div class="wrapper">
+		  <span class="ball"></span>
+		  <span class="ball"></span>
+		  <span class="ball"></span>
+		  <span class="ball"></span>
+		</div>
+		<div class="drop-shadow"></div>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		  <defs>
+		    <filter id="ball">
+		      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+		      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="ball" />
+		      <feBlend in="SourceGraphic" in2="ball" />
+		  	</filter>
+		</defs>
+		</svg>
+	</div>
+	</div>
+		<div class="container">
+			<div class="header-body">
+				<nav>
+					<ul class="menu">
+						<li class="menu__item">
+							<a href="#" class="menu__link">New order</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Services</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Orders</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Add funds</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">API</a>
+						</li>
+					</ul>
+				</nav>
+				<a href="#"><img src="img/russia.svg" alt="Russia" class="russia"></a>
+				<div class="data-menu">
+					<a href="#">$0.00</a>
+					<a href="#">Account</a>
+					<a href="#">Logout</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="code">
+		<div class="container">
+			<div class="code-wrapper">
+				<div class="code-block">
+					<h3>API</h3>
+					<div class="table-wrapper">
+						<div class="table-body">
+							<div class="table__item table-radius1">
+								<p>HTTP Method</p>
+							</div>
+							<div class="table__item table-radius2">
+								<p>POST</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API URL</p>
+							</div>
+							<div class="table__item">
+								<p>https://worldmarketing.top/api/v2</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API Key</p>
+							</div>
+							<div class="table__item">
+								<p>115bea33a436d63477adcd7562f99a5</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item table-radius3">
+								<p>Response format</p>
+							</div>
+							<div class="table__item table-radius4">
+								<p>JSON</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code-block code-second">
+					<h3>Service list</h3>
+					<div class="table-wrapper">
+						<div class="table-body">
+							<div class="table__item table-bold table-radius1">
+								<p>Parameters</p>
+							</div>
+							<div class="table__item table-bold table-radius2">
+								<p>Description</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API URL</p>
+							</div>
+							<div class="table__item">
+								<p>https://worldmarketing.top/api/v2</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item table-radius3">
+								<p>API Key</p>
+							</div>
+							<div class="table__item table-radius4">
+								<p>115bea33a436d63477adcd7562f99a5</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code-write">
+					<h3>Example response</h3>
+					<div class="code-card">
+						<p>
+							[ <br>
+                            	<strong>{</strong><br>
+	        						<span>
+	        							"service": 1, <br> "name": "Followers", <br> "type": "Default", <br>"category": "First Category",  <br>"rate": "0.90", <br> "min": "50", <br> "max": "10000" <br>
+	        						</span>
+
+    							<strong>},</strong> <br>
+    					</p>
+    					<p>
+						    	<strong>{</strong> <br>
+							        <span>
+							        	"service": 2, <br> "name": "Comments", <br> "type": "Custom Comments", <br> "category": "Second Category", <br> "rate": "8", <br> "min": "10", <br> "max": "1500" <br>
+							        </span>
+						    	<strong>}</strong> <br>
+							]
+						</p>	
+					</div>
+				</div>
+				<div class="service-block">
+					<h3>Service list</h3>
+					<div class="service-list">
+						<p>Custom components</p>
+						<img src="img/strelka.svg" alt="" class="strelka">
+						<div class="service-down">
+							<div class="service-down-list service-one">
+								<p>Facebook Livestream Views[hourly]</p>
+							</div>
+							<div class="service-down-list service-two">
+								<p>VK Livestream Views[hourly]</p>
+							</div>
+							<div class="service-down-list service-three">
+								<p>Instagram Livestream Views[hourly]</p>
+							</div>
+							<div class="service-down-list service-footh">
+								<p>Twitter Livestream Views[hourly]</p>
+							</div>
+							<div class="service-down-list service-five">
+								<p>YouTube Livestream Views[hourly]</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="code-block code-third">
+					<div class="table-wrapper table-third">
+						<div class="table-body">
+							<div class="table__item table-bold table-radius1">
+								<p>Parameters</p>
+							</div>
+							<div class="table__item table-bold table-radius2">
+								<p>Description</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API URL</p>
+							</div>
+							<div class="table__item">
+								<p>https://worldmarketing.top/api/v2</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API Key</p>
+							</div>
+							<div class="table__item">
+								<p>115bea33a436d63477adcd7562f99a5</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API URL</p>
+							</div>
+							<div class="table__item">
+								<p>https://worldmarketing.top/api/v2</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API Key</p>
+							</div>
+							<div class="table__item">
+								<p>115bea33a436d63477adcd7562f99a5</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item">
+								<p>API URL</p>
+							</div>
+							<div class="table__item">
+								<p>https://worldmarketing.top/api/v2</p>
+							</div>
+						</div>
+						<div class="table-body">
+							<div class="table__item table-radius3">
+								<p>API Key</p>
+							</div>
+							<div class="table__item table-radius4">
+								<p>115bea33a436d63477adcd7562f99a5</p>
+							</div>
+						</div>
+					</div>
+					<div class="table-button">
+						<a href="#" class="table-btn">Example of PHP code</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
